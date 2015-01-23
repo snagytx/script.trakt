@@ -339,7 +339,7 @@ class Sync():
 		for show in shows:
 			Debug("[Episodes Sync] Episodes removed: %s" % self.getShowAsString(show, short=True))
 
-		self.updateProgress(82, line1=utilities.getString(1445), line2=utilities.getString(1497) % self.countEpisodes(shows), line3=" ")
+		self.updateProgress(82, line1=utilities.getString(1445), line2=utilities.getString(1497) % self.countEpisodes(shows['shows']), line3=" ")
 
 		i = 0
 		x = float(len(shows))
